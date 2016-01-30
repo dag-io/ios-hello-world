@@ -594,7 +594,6 @@
 		};
 		3C5289CC1C5D5EBC00B5C49E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9224924E7BF60B0CA639C9A /* Pods-HelloWorldUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = HelloWorldUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -607,7 +606,6 @@
 		};
 		3C5289CD1C5D5EBC00B5C49E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 295970CE33AD540494BB35A5 /* Pods-HelloWorldUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = HelloWorldUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

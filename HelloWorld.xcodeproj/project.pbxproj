@@ -15,7 +15,7 @@
 		3C5289B61C5D5EBC00B5C49E /* HelloWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5289B51C5D5EBC00B5C49E /* HelloWorldTests.swift */; };
 		3C5289C11C5D5EBC00B5C49E /* HelloWorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5289C01C5D5EBC00B5C49E /* HelloWorldUITests.swift */; };
 		3C5289D51C5D682A00B5C49E /* HelloWorldSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5289D41C5D682A00B5C49E /* HelloWorldSnapshotTests.swift */; };
-		FA6AECCF60B71B9E87EEF84C /* Pods_HelloWorldSnapshotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 789943E5DE21FB8C8252246B /* Pods_HelloWorldSnapshotTests.framework */; };
+		DC08AAA2DAF514DB90ABC2F0 /* Pods_HelloWorldSnapshotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 789943E5DE21FB8C8252246B /* Pods_HelloWorldSnapshotTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +61,7 @@
 		3C5289D21C5D682A00B5C49E /* HelloWorldSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldSnapshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C5289D41C5D682A00B5C49E /* HelloWorldSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldSnapshotTests.swift; sourceTree = "<group>"; };
 		3C5289D61C5D682A00B5C49E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C87F6F31C5D753B0043B73F /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSnapshotTestCase.framework; path = "Pods/../build/Debug-iphoneos/FBSnapshotTestCase.framework"; sourceTree = "<group>"; };
 		789943E5DE21FB8C8252246B /* Pods_HelloWorldSnapshotTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloWorldSnapshotTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97735F995FB3355EFC9EEE7D /* Pods-HelloWorldSnapshotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorldSnapshotTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorldSnapshotTests/Pods-HelloWorldSnapshotTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C538EE1354851383EB60C2C3 /* Pods_HelloWorldUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloWorldUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA6AECCF60B71B9E87EEF84C /* Pods_HelloWorldSnapshotTests.framework in Frameworks */,
+				DC08AAA2DAF514DB90ABC2F0 /* Pods_HelloWorldSnapshotTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +179,7 @@
 		D0594A5AB2132D9906AB926D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3C87F6F31C5D753B0043B73F /* FBSnapshotTestCase.framework */,
 				C538EE1354851383EB60C2C3 /* Pods_HelloWorldUITests.framework */,
 				789943E5DE21FB8C8252246B /* Pods_HelloWorldSnapshotTests.framework */,
 			);
@@ -621,6 +623,10 @@
 			baseConfigurationReference = 97735F995FB3355EFC9EEE7D /* Pods-HelloWorldSnapshotTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = HelloWorldSnapshotTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.dag.HelloWorldSnapshotTests;
@@ -634,6 +640,10 @@
 			baseConfigurationReference = 26264F949A391AFE0F6D0CD8 /* Pods-HelloWorldSnapshotTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = HelloWorldSnapshotTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.dag.HelloWorldSnapshotTests;

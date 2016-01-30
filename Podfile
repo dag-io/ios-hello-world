@@ -11,7 +11,11 @@ target 'HelloWorldTests' do
 
 end
 
+target 'HelloWorldSnapshotTests' do
+        pod 'FBSnapshotTestCase'
+end
+
 target 'HelloWorldUITests' do
-	pod 'FBSnapshotTestCase'
+
 end
 
